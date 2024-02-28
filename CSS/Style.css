@@ -274,6 +274,7 @@ background: #3a8ffd;
       border: 0;
       flex-grow: 1;
       padding: 1.5rem 2rem;
+      width: 0;
     }
 .input-group .btn{
     margin: 4px;
@@ -496,6 +497,7 @@ background: #3a8ffd;
     .callout{
         padding: 4rem;
         border-radius: 5px;
+        
     }
 
     .callout--primary{
@@ -657,7 +659,11 @@ border-bottom: 1px solid #222;
 
 /* Hero */
 
-    
+ .hero{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+ 
+   
 
 .hero__tagline{
     font-size: 2rem;
@@ -693,6 +699,7 @@ border-bottom: 1px solid #222;
 
 .block-domain__prices{
     display: grid;
+    color: var(--color-heading);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
@@ -770,6 +777,7 @@ border-bottom: 1px solid #222;
 /* footer */
 .footer{
     background: #232323;
+
 }
 
 .footer a{
@@ -840,4 +848,8 @@ max-height: 100%;
     font-size: 1.6rem;
 }
 
+}
+/* sign-up callout */
+.callout-signup{
+    transform: translateY(5rem);
 }
